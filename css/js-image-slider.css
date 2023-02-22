@@ -1,0 +1,128 @@
+/* http://www.menucool.com */
+#sliderFrame {position:relative;width:960px;margin: 0 auto;}
+#ribbon 
+{
+	width:111px;
+	height:111px;
+	position:absolute;
+	top:-4px;
+	left:-4px;
+	background:url(ribbon.png) no-repeat;
+	z-index:7;
+}       
+#slider,#slidernews {
+    width: 100%;
+    height:334px;
+	background:#fff url(../images/loading.gif) no-repeat 50% 50%;
+	position:relative;
+    box-shadow: 0px 1px 5px #999999;
+}
+#slider img,#slidernews img {
+	position:absolute;
+	border:none;
+	display:none;
+}
+#slider a.imgLink,#slidernews a.imgLink {
+	z-index:2;
+	display:none;
+	position:absolute;
+	top:0px;
+	left:0px;
+	border:0;
+	padding:0;
+	margin:0;
+	width:100%;
+	height:100%;
+}
+div.mc-caption-bg, div.mc-caption-bg2 {
+	position:absolute;
+	width:100%;
+	height:auto;
+	padding:0;
+	left:0px;
+	bottom:0px;
+	z-index:3;
+	overflow:hidden;
+	font-size: 0;
+}
+div.mc-caption-bg {
+	background-color:black;
+}
+div.mc-caption {
+	font: bold 14px/20px Arial;
+	color:#EEE;
+	z-index:4;
+	padding:10px 0;
+	text-align:center;
+}
+div.mc-caption a {
+	color:#FB0;
+}
+div.mc-caption a:hover {
+	color:#DA0;
+}
+div.navBulletsWrapper  {
+    bottom: 5px;
+    right: 10px;
+    width: 125px;
+    margin-left: -112px;
+    background: none;
+    position: absolute;
+    z-index: 5;
+    cursor: pointer;
+}
+div.navBulletsWrapper div 
+{
+    width:20px; 
+    height:20px;
+    background:transparent url(../images/pager01.jpg) no-repeat left top;
+    float:left;
+    overflow:hidden;
+    vertical-align:middle;
+    cursor:pointer;
+    margin-right:5px;
+    _position:relative;/*IE6 hack*/
+}
+div.navBulletsWrapper div:nth-of-type(2) 
+{
+    background:transparent url(../images/pager02.jpg) no-repeat left top;
+}
+div.navBulletsWrapper div:nth-of-type(3) 
+{
+    background:transparent url(../images/pager03.jpg) no-repeat left top;
+}
+div.navBulletsWrapper div:nth-of-type(4) 
+{
+    background:transparent url(../images/pager04.jpg) no-repeat left top;
+}
+div.navBulletsWrapper div:nth-of-type(5) 
+{
+    background:transparent url(../images/pager05.jpg) no-repeat left top;
+}
+div.navBulletsWrapper div.active,div.navBulletsWrapper div:hover {
+    background:transparent url(../images/pager01_hover.jpg) no-repeat left top;
+}
+div.navBulletsWrapper div.active:nth-of-type(2),div.navBulletsWrapper div:nth-of-type(2):hover 
+{
+    background:transparent url(../images/pager02_hover.jpg) no-repeat left top;
+}
+div.navBulletsWrapper div.active:nth-of-type(3),div.navBulletsWrapper div:nth-of-type(3):hover  
+{
+    background:transparent url(../images/pager03_hover.jpg) no-repeat left top;
+}
+div.navBulletsWrapper div.active:nth-of-type(4),div.navBulletsWrapper div:nth-of-type(4):hover  
+{
+    background:transparent url(../images/pager04_hover.jpg) no-repeat left top;
+}
+div.navBulletsWrapper div.active:nth-of-type(5),div.navBulletsWrapper div:nth-of-type(5):hover  
+{
+    background:transparent url(../images/pager05_hover.jpg) no-repeat left top;
+}
+/* --------- Others ------- */
+#slider ,#slidernews
+{
+	transform: translate3d(0,0,0);
+    -ms-transform:translate3d(0,0,0);
+    -moz-transform:translate3d(0,0,0);
+    -o-transform:translate3d(0,0,0);
+}
